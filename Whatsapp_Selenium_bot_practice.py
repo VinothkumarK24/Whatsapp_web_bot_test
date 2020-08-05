@@ -1,17 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
 
-
-import time
- 
+import time 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select, WebDriverWait
- 
 import requests
  
 # variable to store the name of the contact
@@ -38,10 +34,5 @@ message.send_keys('Hey This Automated software')
 send = driver.find_element_by_xpath('//button[@class= "_1U1xa"]')
 send.click()
 print('done')
-
-
-# In[ ]:
-
-
 
 
